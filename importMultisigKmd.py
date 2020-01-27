@@ -1,3 +1,5 @@
+# this file generates standalone accounts using algosdk, creates a multisig object with those standalone accounts and imports them into a KMD wallet
+
 import params
 from algosdk import kmd, algod, account, encoding, mnemonic, transaction
 
