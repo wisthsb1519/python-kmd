@@ -33,7 +33,8 @@ txn = transaction.PaymentTxn(sender, fee, last_round, last_round+100, gh, accoun
 # create a SignedTransaction object
 mtx = transaction.MultisigTransaction(txn, msig)
 
-# sign the transaction
+# sign and append the transaction
+# see for details https://github.com/algorand/py-algorand-sdk/blob/b079db660ae92d0dbf24dc04f28eb722711e426f/algosdk/transaction.py#L862
 mtx.sign(private_key_1)
 mtx.sign(private_key_2)
 
