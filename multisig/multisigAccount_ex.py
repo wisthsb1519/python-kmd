@@ -1,3 +1,6 @@
+# possibly replace MultisigTransaction method with Multisig
+# https://github.com/algorand/py-algorand-sdk/blob/b079db660ae92d0dbf24dc04f28eb722711e426f/algosdk/transaction.py#L893
+
 import params
 from algosdk import account, transaction, algod, encoding
 
