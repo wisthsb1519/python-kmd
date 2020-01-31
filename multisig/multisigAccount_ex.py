@@ -18,7 +18,7 @@ print("Account 3:", account_3)
 version = 1  # multisig version
 threshold = 2  # how many signatures are necessary
 msig = transaction.Multisig(version, threshold, [account_1, account_2])
-print(msig.address())
+print("Multig Account: ", msig.address())
 input("Please go to: https://bank.testnet.algorand.network/ to fund your multisig account." + '\n' + "Press Enter to continue...")
 
 # get suggested parameters
@@ -30,8 +30,9 @@ fee = params["fee"]
 
 # create a transaction
 sender = msig.address()
+recipient = "4CXXFP3SJJW63HGEQD4OPSDPPIYDW7BXCVP4DQZG7T33Z3BXTOA4UMEDM4"
 amount = 10000
-txn = transaction.PaymentTxn(sender, fee, last_round, last_round+100, gh, account_3, amount)
+txn = transaction.PaymentTxn(sender, fee, last_round, last_round+100, gh, recipient, amount)
 
 # create a SignedTransaction object
 mtx = transaction.MultisigTransaction(txn, msig)
