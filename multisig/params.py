@@ -10,7 +10,7 @@ home = expanduser("~")
 # kmd_token = "e4a0aa0518da921bae3f27f40f443a4e154a1c80f25f7759db7767e04d73c06c"
 # kmd_address = "http://localhost:7833"
 
-# algod_token = "b65ea5effe184f71b9ce7a8f8a1ebda9bdbc24ce0ef0d4fff506429bb3629050"
+# algod_token = "a967f42b017cd4c5c95a633e87b5ff14226ae60609e174bf5832722631946e13"
 # algod_address = "http://localhost:8080"
 
 # path to the data directory
