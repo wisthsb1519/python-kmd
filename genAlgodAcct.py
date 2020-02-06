@@ -5,7 +5,7 @@ private_key, address = account.generate_account()
 # extract the mnemonic phrase from the private key
 mn = mnemonic.from_private_key(private_key)
 print("Private key:", private_key)
-print("Mnemonic", mn)
+print("Mnemonic:", mn)
 print("Address:", address)
 
 # check if the address is valid

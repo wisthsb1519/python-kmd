@@ -9,7 +9,7 @@ backup = "alpha worry field wait hobby artist grape engine sponsor broccoli scar
 mdk = mnemonic.to_master_derivation_key(backup)
 
 # recover the wallet by passing mdk when creating a wallet
-new_wallet = kcl.create_wallet("wallet21", "testpassword", master_deriv_key=mdk)
+new_wallet = kcl.create_wallet("wallet40", "testpassword", master_deriv_key=mdk)
 print("New Wallet:", new_wallet)
 
 walletid = new_wallet.get("id")
