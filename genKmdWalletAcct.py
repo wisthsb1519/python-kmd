@@ -17,5 +17,5 @@ address = wallet.generate_key()
 print("New account:", address)
 
 # delete the account
-# delete = wallet.delete_key(address)
-# print("Account deleted:", delete)
+delete = wallet.delete_key(address)
+print("Account deleted:", delete)

@@ -19,5 +19,6 @@ wallethandle = kcl.init_wallet_handle(walletid, "testpassword")
 accounts = kcl.list_keys(wallethandle)
 print("Accounts:", accounts)
 
+# if there were accounts previously generated in this wallet, then generate_key() will regenerate them
 address = kcl.generate_key(wallethandle)
 print("New account:", address)
